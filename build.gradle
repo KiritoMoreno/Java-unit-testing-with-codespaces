@@ -1,0 +1,21 @@
+plugin{
+  id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories{
+  mavenCentral()
+}
+
+test {
+  useJunitPlatform()
+}
+
+dependecies {
+  // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.11.3'
+
+}
+
