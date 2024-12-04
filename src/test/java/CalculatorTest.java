@@ -1,3 +1,4 @@
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertLinesMatch;
@@ -64,4 +65,17 @@ public class CalculatorTest {
     boolean actual = calculator.isEven(1);
     assertFalse(actual);
   }
+
+  // Comparing Arrays 
+  @Test
+  public void testIncrementArray(){
+    int[] expected = new int[]{2,3,4};
+
+    int [] actual = calculator.incrementArray(new int[]{1,2,3});
+
+    assertArrayEquals(expected, actual);
+
+  }
+
+
 }
